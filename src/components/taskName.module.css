@@ -17,9 +17,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     padding: 20px;
-    margin: 50px auto 0;
+    margin: 50px auto 60px;
     transition: all 1s;
-    margin-bottom: 60px;
   }
 }
 
