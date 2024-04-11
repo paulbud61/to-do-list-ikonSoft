@@ -1,0 +1,45 @@
+@media (max-width: 319px) {
+  .filterContainer {
+    border-radius: 8px;
+    padding: 8px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(11, 190, 209);
+  }
+}
+
+@media (min-width: 320px) {
+  .filterContainer {
+    border-radius: 8px;
+    padding: 8px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(11, 190, 209);
+    transition: all 1s;
+  }
+}
+
+@media (min-width: 768px) {
+  .filterContainer {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filterContainer {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filterContainer {
+    font-size: 30px;
+    display: flex;
+  }
+}
