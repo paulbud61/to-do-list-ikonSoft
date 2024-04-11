@@ -1,42 +1,148 @@
-.item {
-  width: 500px;
-  color: #353535;
-  font-size: 20px;
-  margin: 0 auto;
+@media (max-width: 319px) {
+  .item {
+    width: 100%;
+    color: #353535;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .itemName {
+    font-weight: bold;
+    padding: 5px;
+    white-space: nowrap; /* Previne împărțirea cuvintelor și scroll-ul orizontal */
+    overflow: auto; /* Activează bara de derulare orizontală în cazul în care textul depășește lățimea elementului */
+  }
+
+  .itemName.space-between {
+    white-space: normal; /* Permite împărțirea cuvintelor */
+    word-wrap: break-word; /* Asigură împărțirea corectă a cuvintelor */
+  }
+
+  .line {
+    border: 1px solid #dbd9d9;
+  }
+
+  .deleteButton {
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(11, 190, 209);
+    color: #fff;
+    margin-top: -5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .editButton {
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(11, 190, 209);
+    color: #fff;
+    margin-top: -5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+
+  .blueButton {
+    display: flex;
+    margin-left: 40px;
+  }
 }
 
-.itemName {
-  font-weight: bold;
-  padding: 20px;
+@media (min-width: 320px) {
+  .item {
+    width: 100%;
+    color: #353535;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .itemName {
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    white-space: nowrap; /* Previne împărțirea cuvintelor și scroll-ul orizontal */
+    overflow: auto; /* Activează bara de derulare orizontală în cazul în care textul depășește lățimea elementului */
+  }
+
+  .itemName.space-between {
+    white-space: normal; /* Permite împărțirea cuvintelor */
+    word-wrap: break-word; /* Asigură împărțirea corectă a cuvintelor */
+  }
+
+  .line {
+    border: 1px solid #dbd9d9;
+  }
+
+  .deleteButton {
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(11, 190, 209);
+    color: #fff;
+    margin-top: -5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .editButton {
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(11, 190, 209);
+    color: #fff;
+    margin-top: -5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+
+  .category {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 500px) {
+  .category {
+    margin-left: 80px;
+  }
 }
 
-.line {
-  border: 1px solid #dbd9d9;
+@media (min-width: 768px) {
+  .category {
+    margin-left: 110px;
+  }
+}
+@media (min-width: 1280px) {
+  .category {
+    margin-left: 310px;
+  }
 }
 
-.deleteButton {
-  float: right;
-  padding: 12px 20px;
-  border: none;
-  background-color: rgb(11, 190, 209);
-  color: #fff;
-  margin-top: -5px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+@media (min-width: 2000px) {
+  .deleteButton {
+    font-size: 35px;
+  }
 
-.editButton {
-  float: right;
-  padding: 12px 20px;
-  border: none;
-  background-color: rgb(11, 190, 209);
-  color: #fff;
-  margin-top: -5px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-right: 3px;
-}
+  .editButton {
+    font-size: 35px;
+  }
 
-.completed {
-  text-decoration: line-through;
+  .category {
+    font-size: 40px;
+    margin-left: 700px;
+  }
+
+  .itemName {
+    font-size: 40px;
+  }
 }

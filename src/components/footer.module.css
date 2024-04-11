@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   position: fixed;
   bottom: 0;
   font-size: 1.5em;
@@ -7,8 +7,34 @@
   width: 100%;
   background-color: rgb(11, 190, 209);
   padding: 10px;
+} */
+
+@media (max-width: 319px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(11, 190, 209);
+    padding: 10px;
+  }
 }
 
-.item {
-  margin: 50px;
+@media (min-width: 320px) {
+  .footer {
+    bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(11, 190, 209);
+    padding: 10px;
+    position: sticky;
+  }
+
+  .item {
+    display: block;
+  }
 }

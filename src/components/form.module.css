@@ -1,35 +1,121 @@
-.taskform {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 50px;
-  box-shadow: 0 4px 6px rgb(0, 0, 0.1);
+@media (max-width: 319px) {
+  .taskform {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    width: 169px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0.1);
+  }
+  .modernInput {
+    display: block;
+    width: 100%;
+    border: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .modernInput:focus {
+    outline: none;
+  }
+
+  .modernButton {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(11, 190, 209);
+    padding: 12px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 48px;
+  }
+
+  .inputContainer {
+    display: block;
+  }
 }
 
-.modernInput {
-  display: block;
-  width: 100%;
-  border: none;
-  color: black;
-  font-size: 16px;
+@media (min-width: 320px) {
+  .taskform {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0.1);
+  }
+
+  .modernInput {
+    display: block;
+    width: 100%;
+    border: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .modernInput:focus {
+    outline: none;
+  }
+
+  .modernButton {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(11, 190, 209);
+    padding: 12px 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .inputContainer {
+    display: flex;
+  }
 }
 
-.modernInput:focus {
-  outline: none;
+@media (min-width: 500px) {
+  .taskform {
+    width: 350px;
+    padding: 15px;
+    transition: all 1s;
+  }
 }
 
-.modernButton {
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(11, 190, 209);
-  padding: 12px 20px;
-  color: #fff;
-  cursor: pointer;
+@media (min-width: 768px) {
+  .taskform {
+    padding: 20px;
+    width: 400px;
+    transition: all 1s;
+  }
 }
 
-.inputContainer {
-  display: flex;
+@media (min-width: 1280px) {
+  .taskform {
+    padding: 20px;
+    width: 600px;
+    transition: all 1s;
+  }
+
+  .modernInput {
+    font-size: 20px;
+  }
+  .modernButton {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .taskform {
+    padding: 20px;
+    width: 1200px;
+    transition: all 1s;
+  }
+
+  .modernInput {
+    font-size: 40px;
+  }
+  .modernButton {
+    font-size: 35px;
+  }
 }
