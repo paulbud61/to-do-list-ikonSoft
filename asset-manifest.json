@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/to-do-list-ikonSoft/static/css/main.ce10aca5.css",
-    "main.js": "/to-do-list-ikonSoft/static/js/main.224c536d.js",
+    "main.css": "/to-do-list-ikonSoft/static/css/main.e1800a01.css",
+    "main.js": "/to-do-list-ikonSoft/static/js/main.b57ce3a0.js",
     "index.html": "/to-do-list-ikonSoft/index.html",
-    "main.ce10aca5.css.map": "/to-do-list-ikonSoft/static/css/main.ce10aca5.css.map",
-    "main.224c536d.js.map": "/to-do-list-ikonSoft/static/js/main.224c536d.js.map"
+    "main.e1800a01.css.map": "/to-do-list-ikonSoft/static/css/main.e1800a01.css.map",
+    "main.b57ce3a0.js.map": "/to-do-list-ikonSoft/static/js/main.b57ce3a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce10aca5.css",
-    "static/js/main.224c536d.js"
+    "static/css/main.e1800a01.css",
+    "static/js/main.b57ce3a0.js"
   ]
 }
