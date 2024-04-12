@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Form from './Form';
 import TaskName from './TaskName';
 import Footer from './Footer';
-import styles from './task.module.css'; // Importă fișierul CSS
+import styles from './task.module.css';
 
 export default function Task() {
   const [tasks, setTasks] = useState([]);
