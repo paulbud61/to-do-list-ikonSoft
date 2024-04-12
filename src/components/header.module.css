@@ -130,7 +130,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 6px;
   }
   .modalBackdrop {
     position: fixed;
