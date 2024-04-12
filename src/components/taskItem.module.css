@@ -1,3 +1,39 @@
+.item {
+  /* display: flex; */
+  align-items: center;
+}
+
+.itemContent {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  margin-left: auto;
+}
+
+.itemName {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deleteButton,
+.editButton {
+  padding: 12px 20px;
+  border: none;
+  background-color: rgb(11, 190, 209);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.deleteButton + .editButton {
+  margin-left: 5px;
+}
+
 @media (max-width: 319px) {
   .item {
     width: 100%;
@@ -20,33 +56,6 @@
 
   .line {
     border: 1px solid #dbd9d9;
-  }
-
-  .deleteButton {
-    float: right;
-    padding: 12px 20px;
-    border: none;
-    background-color: rgb(11, 190, 209);
-    color: #fff;
-    margin-top: -5px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .editButton {
-    float: right;
-    padding: 12px 20px;
-    border: none;
-    background-color: rgb(11, 190, 209);
-    color: #fff;
-    margin-top: -5px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 3px;
-  }
-
-  .completed {
-    text-decoration: line-through;
   }
 
   .blueButton {
@@ -76,70 +85,19 @@
     word-wrap: break-word;
   }
 
-  .line {
-    border: 1px solid #dbd9d9;
-  }
-
-  .deleteButton {
-    float: right;
-    padding: 12px 20px;
-    border: none;
-    background-color: rgb(11, 190, 209);
-    color: #fff;
-    margin-top: -5px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .editButton {
-    float: right;
-    padding: 12px 20px;
-    border: none;
-    background-color: rgb(11, 190, 209);
-    color: #fff;
-    margin-top: -5px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 3px;
-  }
-
-  .completed {
-    text-decoration: line-through;
-  }
-
   .category {
-    margin-left: 30px;
-  }
-}
-@media (min-width: 500px) {
-  .category {
-    margin-left: 80px;
-  }
-}
-
-@media (min-width: 768px) {
-  .category {
-    margin-left: 110px;
-  }
-}
-@media (min-width: 1280px) {
-  .category {
-    margin-left: 310px;
+    margin-left: 10px;
   }
 }
 
 @media (min-width: 2000px) {
-  .deleteButton {
-    font-size: 35px;
-  }
-
+  .deleteButton,
   .editButton {
     font-size: 35px;
   }
 
   .category {
     font-size: 40px;
-    margin-left: 700px;
   }
 
   .itemName {
