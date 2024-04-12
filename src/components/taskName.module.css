@@ -19,6 +19,8 @@
     padding: 20px;
     margin: 50px auto 60px;
     transition: all 1s;
+    z-index: 0;
+    position: relative;
   }
 }
 

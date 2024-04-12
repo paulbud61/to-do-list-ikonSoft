@@ -17,7 +17,9 @@ export default function Form({ tasks, setTasks }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setTasks([...tasks, task]);
+    const updatedTasks = [...tasks, task];
+    setTasks(updatedTasks);
+    localStorage.setItem('tasks', JSON.stringify(updatedTasks));
     setTask({ name: '', category: '', done: false });
   }
 

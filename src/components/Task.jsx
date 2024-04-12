@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from './Form';
 import TaskName from './TaskName';
 import Footer from './Footer';
@@ -6,6 +6,14 @@ import styles from './task.module.css'; // Importă fișierul CSS
 
 export default function Task() {
   const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+      setTasks(JSON.parse(savedTasks));
+    }
+  }, []);
+
   const [filter, setFilter] = useState('all');
 
   const filteredTasks = tasks.filter(task => {
@@ -23,12 +31,8 @@ export default function Task() {
 
   return (
     <div className={styles.container}>
-      {' '}
-      {/* Aplică clasa pentru container */}
       <Form tasks={tasks} setTasks={setTasks} />
       <div className={styles.filterContainer}>
-        {' '}
-        {/* Aplică clasa pentru containerul de filtre */}
         <label>
           <input
             type="radio"
