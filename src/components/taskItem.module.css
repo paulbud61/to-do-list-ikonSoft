@@ -34,6 +34,9 @@
   margin-left: 5px;
 }
 
+.completed {
+  text-decoration: line-through;
+}
 @media (max-width: 319px) {
   .item {
     width: 100%;
